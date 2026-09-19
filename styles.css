@@ -1,0 +1,41 @@
+header {
+    text-align: center;
+}
+
+body {
+background-color: silver;
+color: rgb(0, 0, 0)
+}
+
+img{
+    max-width: 300px;
+    max-height: 50%;
+    border-radius: 250px;
+}
+
+.course-link {
+    text-align: center;
+}
+
+.course-link a:link {
+    color: blue;
+}
+
+.course-link a:visited {
+    color: rgb(154, 97, 1);
+    font-weight: 100px;
+}
+
+.course-link a:hover {
+    color: firebrick;
+}
+
+hr {
+    border: 3px double;
+    background-color: black;
+    
+}
+
+footer {
+    text-align: center;
+}
