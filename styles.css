@@ -3,8 +3,10 @@ header {
 }
 
 body {
-background-color: silver;
-color: rgb(0, 0, 0)
+    font-family: copperplate;
+    background-color: silver;
+    color: rgb(0, 0, 0);
+
 }
 
 img{
@@ -18,7 +20,7 @@ img{
 }
 
 .course-link a:link {
-    color: blue;
+    color: green;
 }
 
 .course-link a:visited {
