@@ -45,3 +45,7 @@ footer a:link{
 .center-text {
     text-align: center;
 }
+
+figure {
+    text-align: center;
+}
