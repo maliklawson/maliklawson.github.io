@@ -8,7 +8,8 @@ body {
     color: navy;
     text-align: center;
     max-width: none;
-    margin: auto;
+    margin: 0;
+    padding: 24px;
 
 }
 
