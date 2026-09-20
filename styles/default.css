@@ -1,0 +1,66 @@
+header {
+    text-align: center;
+}
+
+body {
+    font-family: copperplate;
+    background-color: silver;
+    color: navy;
+    text-align: center;
+    max-width: none;
+    margin: auto;
+
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0;
+}
+
+img{
+    max-width: 300px;
+    max-height: 50%;
+    border-radius: 250px;
+}
+
+.course-link {
+    text-align: center;
+    font-family: Arial black;
+}
+
+.course-link a:link {
+    color: green;
+}
+
+.course-link a:visited {
+    color: rgb(154, 97, 1);
+    font-weight: 100px;
+}
+
+.course-link a:hover {
+    color: firebrick;
+}
+
+hr {
+    border: 3px double;
+    background-color: black;
+    
+}
+
+footer a:link {
+    color: green;
+}
+
+footer a:visited {
+    color: rgb(154, 97, 1);
+    font-weight: 100px;
+}
+
+footer a:hover {
+    color: firebrick;
+}
+
+footer {
+    text-align: center;
+}

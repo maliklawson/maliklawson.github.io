@@ -1,0 +1,29 @@
+body {
+    font-family: copperplate;
+    color: #fff8dc;
+    background-color: rgb(77, 76, 76);
+}
+
+header {
+    text-align: center;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: firebrick;
+}
+
+a:link{
+    color: green;
+}
+
+hr {
+    border: 3px double;
+}
+
+footer {
+    text-align: center;
+}
