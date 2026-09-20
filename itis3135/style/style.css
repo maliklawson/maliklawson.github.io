@@ -3,7 +3,6 @@ body {
     font-family: copperplate;
     color: #fff8dc;
     background-color: rgb(77, 76, 76);
-    max-width: none;
 }
 
 header {
@@ -49,4 +48,8 @@ footer a:link{
 
 .figure-centered {
     text-align: center;
+}
+
+.diff-font {
+    font-family: arial black;
 }
