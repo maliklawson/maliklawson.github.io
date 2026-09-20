@@ -1,3 +1,4 @@
+/* Start of index.html style for Course Page*/
 body {
     font-family: copperplate;
     color: #fff8dc;
@@ -38,4 +39,9 @@ footer a:hover {
 
 footer a:link{
     color: green;
+}
+
+/* Start of introduction.html style for Introduction Page */
+.center-text {
+    text-align: center;
 }
