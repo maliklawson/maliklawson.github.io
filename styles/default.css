@@ -19,9 +19,12 @@ ul {
 }
 
 img{
-    max-width: 300px;
-    max-height: 60%;
-    border-radius: 250px;
+    max-width: 500px;
+    width: 500px;
+    max-height: 80%;
+    height: 80%;
+    border-radius: 100px;
+    
 }
 
 .course-link {
