@@ -3,7 +3,8 @@ body {
     font-family: copperplate;
     color: #fff8dc;
     background-color: rgb(77, 76, 76);
-    margin: 0;
+    margin: auto;
+    max-width: 900px;
   padding: 24px;
 }
 
@@ -45,8 +46,10 @@ footer a:link{
 }
 
 /* Start of introduction.html style for Introduction Page */
-.center-text {
+.center-text-display-name {
     text-align: center;
+    font-size: 2rem;
+    white-space: nowrap;
 }
 
 .figure-centered {
@@ -55,4 +58,15 @@ footer a:link{
 
 .diff-font {
     font-family: arial black;
+}
+
+.blockquote-center-text{
+    text-align: center;
+}
+
+/* Start of contract.html style for Contract Page */
+.contract-image {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
