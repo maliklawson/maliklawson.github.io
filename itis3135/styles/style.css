@@ -27,3 +27,15 @@ hr {
 footer {
     text-align: center;
 }
+
+footer a:visited {
+    color: yellow;
+}
+
+footer a:hover {
+    color: firebrick;
+}
+
+footer a:link{
+    color: green;
+}
