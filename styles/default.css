@@ -62,9 +62,10 @@ footer a:link {
     color: green;
 }
 
+
 footer a:visited {
     color: rgb(154, 97, 1);
-    font-weight: 100px;
+
 }
 
 footer a:hover {
