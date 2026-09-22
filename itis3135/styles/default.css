@@ -14,6 +14,17 @@ header {
     padding: 20px;
 }
 
+main {
+    max-width: 850px;
+  margin: 30px auto;
+  color: rgb(77, 76, 76);
+  background: #fff8dc;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0, 0, 0);
+  border-left: 6px solid rgb(125, 125, 125);
+}
+
 a:visited {
     color: yellow;
 }
