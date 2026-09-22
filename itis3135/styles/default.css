@@ -4,9 +4,9 @@ body {
     color: #fff8dc;
     background-color: rgb(77, 76, 76);
     margin: auto;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 24px;
 }
 
 header {
@@ -71,4 +71,11 @@ footer a:link{
     display: block;
     margin: 0 auto;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
