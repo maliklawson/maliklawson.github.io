@@ -26,7 +26,7 @@ main {
 }
 
 a:visited, a:link, a:active {
-    color: rgb(255, 212, 131);
+    color: rgb(255, 117, 67);
 }
 
 a:hover {
@@ -44,7 +44,7 @@ footer {
 }
 
 footer a:visited, footer a:link, footer a:active {
-    color: rgb(255, 212, 131);
+    color: rgb(255, 117, 67);
 }
 
 footer a:hover {
