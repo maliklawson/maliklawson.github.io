@@ -26,7 +26,7 @@ main {
 }
 
 a:visited {
-    color: yellow;
+    color: orange;
 }
 
 a:hover {
@@ -34,7 +34,7 @@ a:hover {
 }
 
 a:link{
-    color: green;
+    color: yellow;
 }
 
 hr {
@@ -47,7 +47,7 @@ footer {
 }
 
 footer a:visited {
-    color: yellow;
+    color: orange;
 }
 
 footer a:hover {
@@ -55,7 +55,7 @@ footer a:hover {
 }
 
 footer a:link{
-    color: green;
+    color: yellow;
 }
 
 /* Start of introduction.html style for Introduction Page */
@@ -69,6 +69,7 @@ h6 {
     text-align: center;
 }
 
+/* change font family*/
 .diff-font {
     font-family: arial black;
 }
