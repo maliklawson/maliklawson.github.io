@@ -25,17 +25,14 @@ main {
   border-left: 6px solid rgb(125, 125, 125);
 }
 
-a:visited {
-    color: orange;
+a:visited, a:link, a:active {
+    color: yellow;
 }
 
 a:hover {
-    color: firebrick;
+    color: rgb(188, 188, 188);
 }
 
-a:link{
-    color: yellow;
-}
 
 hr {
     border: 3px double;
@@ -46,17 +43,14 @@ footer {
     font-family: arial rgb(78, 78, 78);
 }
 
-footer a:visited {
-    color: orange;
+footer a:visited, footer a:link, footer a:active {
+    color: yellow;
 }
 
 footer a:hover {
-    color: firebrick;
+    color: rgb(188, 188, 188);
 }
 
-footer a:link{
-    color: yellow;
-}
 
 /* Start of introduction.html style for Introduction Page */
 h6 {
