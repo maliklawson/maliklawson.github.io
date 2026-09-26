@@ -26,11 +26,11 @@ main {
 }
 
 a:visited, a:link, a:active {
-    color: orange;
+    color: rgb(255, 212, 131);
 }
 
 a:hover {
-    color: rgb(188, 188, 188);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -44,11 +44,11 @@ footer {
 }
 
 footer a:visited, footer a:link, footer a:active {
-    color: orange;
+    color: rgb(255, 212, 131);
 }
 
 footer a:hover {
-    color: rgb(188, 188, 188);
+    color: rgb(255, 255, 255);
 }
 
 
