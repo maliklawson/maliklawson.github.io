@@ -34,20 +34,13 @@ img{
     
 }
 
-.course-link a:link {
-    color: green;
-
-}
-
-.course-link a:visited {
+.course-link a:link, .course-link a:active, .course-link a:visited {
     color: rgb(154, 97, 1);
-    font-weight: 100px;
-
-    
+    font-weight: 100px;    
 }
 
-.course-link a:hover, .course-link:active {
-    color: firebrick;
+.course-link a:hover {
+    color: grey;
     text-decoration: underline;
 }
 

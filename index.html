@@ -52,20 +52,13 @@ img{
     
 }
 
-.course-link a:link {
-    color: green;
-
-}
-
-.course-link a:visited {
+.course-link a:link, .course-link a:active, .course-link a:visited {
     color: rgb(154, 97, 1);
     font-weight: 100px;
-
-    
 }
 
-.course-link a:hover, .course-link:active {
-    color: firebrick;
+.course-link a:hover {
+    color: rgb(46, 46, 46);
     text-decoration: underline;
 }
 
@@ -76,17 +69,14 @@ hr {
   margin-right: 2.5%;
 }
 
-footer a:link {
-    color: green;
-}
-
-footer a:visited {
+footer a:link, footer a:active, footer a:visited {
     color: rgb(154, 97, 1);
     font-weight: 100px;
 }
 
 footer a:hover {
-    color: firebrick;
+    color: rgb(46, 46, 46);
+    text-decoration: underline;
 }
 
 footer {
@@ -145,11 +135,14 @@ footer {
     </main>
     
    <hr>
+    <!-- class="course-link" is use to design course links -->
    <nav class="course-link">
     <a href = "itis3135/">Click here to visit my ITIS3135 Site</a>
    </nav>
 
+    <!-- class="footer" is set to deign all footer links  -->
     <footer class="footer">
+         <!-- class="design-page-link" is set to design font-family -->
         <p class="design-page-link">Site designed by<a href="https://webpages.charlotte.edu/mlawso23/itis3135/lawsonenterprises.co/"> Lawson Enterprises </a>©2026</p> 
     </footer>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
