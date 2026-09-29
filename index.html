@@ -13,7 +13,6 @@ body {
     font-family: copperplate;
     background-color: silver;
     color: navy;
-    text-align: center;
     max-width: 1100px;
     margin: 0 auto;
     padding: 15px;
@@ -21,7 +20,7 @@ body {
 }
 
 main {
-    max-width: 850px;
+    max-width: 750px;
   margin: 30px auto;
 color: silver;
   background: navy;
@@ -31,19 +30,26 @@ color: silver;
   border-left: 6px solid rgb(125, 125, 125);
 }
 
+h2 {
+    text-align: center;
+}
+
 ul {
     list-style-position: inside;
-    text-align: center;
+    text-align: left;
     list-style-type: square;
     padding-left: 25px;
 }
 
-img{
+.personal-page-image{
     max-width: 400px;
     width: 400px;
     max-height: 50%;
     height: 50%;
     border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -58,7 +64,7 @@ img{
 }
 
 .course-link a:hover {
-    color: rgb(46, 46, 46);
+    color: silver;
     text-decoration: underline;
 }
 
@@ -107,12 +113,14 @@ footer {
         <p><em><strong>Roaring ahead in Web Development</strong></em></p>
         <nav></nav>
         <hr>
-    <img src="images/Bugatti.jpg" alt="Blue bugatti credit stock.adobe.com"/>
     </header>
 
     <main>
    <section>
     <h2>About Me</h2>
+
+    <!-- class="personal-page-image" styles the image and centers it -->
+    <img class="personal-page-image" src="images/Bugatti.jpg" alt="Blue bugatti credit stock.adobe.com"/>
     <p>Welcome! My name is Malik, and I am learning how to create websites using HTML/CSS and JavaScript</p>
     <p>Below I will go into detail aboout my goals and aspirations</p>
     <ul>
@@ -124,26 +132,18 @@ footer {
     </ul>
    </section>
 
-   <section>
-    <h3>Contact Information</h3>
-    <address>
-        <strong>University of North Carolina at Charlotte</strong><br>
-        Charlotte, NC 28262<br>
-        Email: mlawso23@charlotte.edu
-    </address>
-   </section>
+   <!-- class="course-link" is use to design course links -->
+   <nav class="course-link">
+    <a href = "itis3135/"><strong>Click here to visit my ITIS3135 Site</strong></a>
+    </nav>
     </main>
     
    <hr>
-    <!-- class="course-link" is use to design course links -->
-   <nav class="course-link">
-    <a href = "itis3135/">Click here to visit my ITIS3135 Site</a>
-   </nav>
 
     <!-- class="footer" is set to deign all footer links  -->
     <footer class="footer">
          <!-- class="design-page-link" is set to design font-family -->
-        <p class="design-page-link">Site designed by<a href="https://webpages.charlotte.edu/mlawso23/itis3135/lawsonenterprises.co/"> Lawson Enterprises </a>©2026</p> 
+        <p class="design-page-link">Site designed by <a href="https://webpages.charlotte.edu/mlawso23/itis3135/lawsonenterprises.co/">Lawson Enterprises</a> ©2026</p> 
     </footer>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
