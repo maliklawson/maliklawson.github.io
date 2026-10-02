@@ -1,4 +1,12 @@
 /* Start of index.html style for Course Page*/
+.course-animal{
+  max-width: 300px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  align-items: center;
+}
+
 body {
     font-family: copperplate;
     color: #fff8dc;
@@ -74,12 +82,6 @@ blockquote{
 }
 
 /* Start of contract.html style for Contract Page */
-
-.contract-image {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
 
 @media (max-width: 600px) {
     img {
