@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: copperplate;
+    font-family: tahoma, Helvetica;
     color: #fff8dc;
     background-color: rgb(77, 76, 76);
     margin: auto;
@@ -91,5 +91,8 @@ blockquote{
 
 }
 
-/* Start of about.html style for About Page */
+/* Start of website_evaluations.html style for Website evaluation Page */
+.eval-list li {
+    margin-bottom: 5px;
+}
 
