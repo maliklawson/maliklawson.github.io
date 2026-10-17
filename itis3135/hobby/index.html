@@ -76,28 +76,31 @@
 
         nav a {
             color: var(--navy-blue);
-            text-decoration: none;
+            text-decoration: underline;
             padding: 4px 6px;
-            border-bottom: 1px dotted var(--gold);
+            border: 1px solid var(--navyblue);
             transition: color 0.2s ease, border-color 0.2s ease;
         }
 
         nav .current {
             color: var(--navy-blue);
             font-weight: 600;
-            border-bottom: 1px solid var(--gold-hover);
+            border: 1px solid var(--navyblue);
         }
 
         a {
             color: var(--navy-blue);
             text-decoration: none;
-            border-bottom: 1px dotted var(--gold);
+            border: 1px solid var(--navyblue);
             transition: color 0.2s ease, border-color 0.2s ease;
         }
 
         a:hover, a:focus {
-            color: var(--gold-hover);
-            border-bottom: 1px solid var(--gold-hover);
+            background: var(--gold);
+            color: #fafafa;
+            text-decoration: underline;
+            border: 1px solid var(--navyblue);
+            border-radius: 1000px;
         }
 
         main {
@@ -427,7 +430,7 @@
         <div class="validators">
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fmlawso23%2Fitis3135%2Fhobby%2F">Validate HTML</a>
         <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fmlawso23%2Fitis3135%2Fhobby%2F%23what&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Validate CSS</a>
-        <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/mlawso23/itis3135/hobby/">Check Accessibility</a>
+        <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/mlawso23/itis3135/hobby">Check Accessibility</a>
         </div>
         <p>Site designed by <a href="../lawsonenterprises.co">Lawson Enterprises</a> ©2026</p>
     </footer>
