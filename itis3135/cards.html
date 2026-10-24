@@ -6,6 +6,72 @@
     <title>Malik Lawson's Mighty Lion || ITIS3135 || Cards</title>
     <link rel="stylesheet" href="styles/default.css">
     <link rel="icon" type="image/jpeg" href="images/vecteezy_lion-logo.jpg"/>
+
+    <style>
+        .card-deck {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            border: 2px solid;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px black;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: trasnlateY(-5px);
+            box-shadow: 0 12px 20px rgb(255, 117, 67);
+        }
+
+        .card-corner {
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .card-corner-bottom {
+            position: absolute;
+            display: inline-block;
+            bottom: 10px;
+            right: 12px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .card-content {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        img {
+            display: block;
+            margin: 0 auto 10px;
+            border-radius: 4px;
+        }
+
+        .start-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,11 +81,83 @@
     <hr>
     <main>
         <h2>Cards</h2>
+        <h3>Mighty Lion Hypercar Showcase Deck</h3>
+        <p>This is an interactive card collection highlighting modern Bugatti hypercar masterpieces.</p>
+
+        <!-- div class="card-deck" identifies the card deck display -->
+        <div class="card-deck">
+            <article class="card">
+                <span class="card-corner">1 &#127950;&#127942;</span>
+                <div class="card-content">
+                    <h3>Bugatti Tourbillion</h3>
+                    <p>Naturally Aspirated V16 Hybrid</p>
+                    <img src="images/Bugatti-Tourbillon.jpg" alt="Bugatti Tourbillion" width="350" height="250">
+                    <span class="stat-badge">1,800 Horsepower</span>
+                </div>
+                <span class="card-corner-bottom">1 &#127950;&#127942;</span>
+            </article>
+
+            <article class="card">
+                <span class="card-corner">2 &#127950;&#128168;</span>
+                <div class="card-content">
+                    <h3>Bugatti Bolide</h3>
+                    <p>Track-Only Hypercar</p>
+                    <img src="images/bolide.jpg" alt="Bugatti Tourbillion" width="350" height="250">
+                    <span class="stat-badge">1,825 Horsepower</span>
+                </div>
+                <span class="card-corner-bottom">2 &#127950;&#128168;</span>
+            </article>
+
+            <article class="card">
+                <span class="card-corner">3 &#127950;&#127937;</span>
+                <div class="card-content">
+                    <h3>Chiron Super Sport</h3>
+                    <p>Quad-Turbo W16 Beast</p>
+                    <img src="images/bugatti-chiron-super-sport-300.jpg" alt="Bugatti Tourbillion" width="350" height="250">
+                    <span class="stat-badge">1,578 Horsepower</span>
+                </div>
+                <span class="card-corner-bottom">3 &#127950;&#127937;</span>
+            </article>
+
+            <article class="card">
+                <span class="card-corner">4 &#127950;&#128293;</span>
+                <div class="card-content">
+                    <h3>W16 Mistral</h3>
+                    <p>Ultimate Open-Top Roadster</p>
+                    <img src="images/W16Mistral-bugatti.webp" alt="Bugatti Tourbillion" width="350" height="250">
+                    <span class="stat-badge">1,578 Horsepower</span>
+                </div>
+                <span class="card-corner-bottom">4 &#127950;&#128293;</span>
+            </article>
+
+            <article class="card">
+                <span class="card-corner">5 &#127950;&#128081;</span>
+                <div class="card-content">
+                    <h3>Bugatti Divo</h3>
+                    <p>Track-Focused Agile Hypercar</p>
+                    <img src="images/bugatti-divo.jpg" alt="Bugatti Tourbillion" width="350" height="250">
+                    <span class="stat-badge">1,479 Horsepower</span>
+                </div>
+                <span class="card-corner-bottom">5 &#127950;&#128081;</span>
+            </article>
+
+            <article class="card">
+                <span class="card-corner">6 &#127950;&#128165;</span>
+                <div class="card-content">
+                    <h3>Bugatti Centodieci</h3>
+                    <p>Tribute to the Legendary EB110</p>
+                    <img src="images/centodieci-bugatti.webp" alt="Bugatti Tourbillion" width="350" height="250">
+                    <span class="stat-badge">1,578 Horsepower</span>
+                </div>
+                <span class="card-corner-bottom">6 &#127950;&#128165;</span>
+            </article>
+        </div>
+
         </main>
     <hr>
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.min.js"></script>
 
-    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    
 </body>
 </html>
