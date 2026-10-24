@@ -15,6 +15,55 @@
     <hr> 
     <main>
         <h2>Survey</h2>
+        <h3>Mighty Lion Hypercar Specification Survey</h3>
+        <p>Please take time to complete this consultation survey form to help us personalize your Bugatti hypercar engineering request and profile.</p>
+
+        <!-- id="survey-form" identifies the survey form -->
+        <form id="survey-form">
+            <!-- div class="form-group" identifies each group of the survey form -->
+            <div class="form-group">
+                <label for="name"><strong>Full name</strong></label>
+                <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number"><strong>Age</strong></label>
+                <input id="number" name="age" type="number" min="18" max="100" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><strong>Email Address</strong></label>
+                <input id="email" name="email" type="text" placeholder="email@address.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="horsepower"><strong>Desired Target Horsepower (1,000- 2,000 HP)</strong></label>
+                <input id="horsepower" name="horsepower" type="number" min="1000" max="2000" placeholder="Enter your desired horsepower" required>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Primary Vehicle Interest</strong></label>
+                <select>
+                    <option>Select a Bugatti Hypercar Model</option>
+                    <option>Bugatti Tourbillion (V16 Hybrid)</option>
+                    <option>Bugatti Bolide (Track Spec)</option>
+                    <option>Bugatti Chiron Super Sport</option>
+                    <option>Bugatti W16 Mistrail</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Vehicle Exterior Color</strong></label>
+                <input id="vehicle-color" name="vehicle-color" type="text" placeholder="Enter vehicle exterior color" required>
+            </div>
+
+            <p>
+                <label for="comments"><strong>Additional comments</strong></label>
+                <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Share any additional comments"></textarea>
+            </p>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
     </main>
 
     <hr>
