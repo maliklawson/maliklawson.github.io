@@ -6,6 +6,43 @@
     <title>Malik Lawson's Mighty Lion || ITIS3135 || Inventory</title>
     <link rel="stylesheet" href="styles/default.css">
     <link rel="icon" type="image/jpeg" href="images/vecteezy_lion-logo.jpg"/>
+
+    <style>
+        .inventory{
+            overflow-x: auto;
+            box-shadow: 0 4px 10px;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            padding: 14px 16px;
+            font-size: 1rem;
+            border-bottom: 3px solid rgb(77, 76, 76);;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid rgb(77, 76, 76);
+            vertical-align: middle;
+        }
+
+        th:not(:last-child), td:not(:last-child) {
+            border-right: 1px solid rgb(77, 76, 76);
+        }
+
+        tr:hover {
+            background-color: #e7e0c7;
+        }
+
+    </style>
+
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
@@ -18,7 +55,69 @@
         <h2>Inventory</h2>
         <h3>Mighty Lion Bugatti Fleet</h3>
 
-        <div></div>
+        <!-- div class="inventory" identifies all contents in the inventory table rows and cols -->
+        <div class="inventory">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Powertrain Specs</th>
+                        <th>MSRP</th>
+                        <th>Quantity in Stock</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Bugatti Tourbillon</strong></td>
+                        <td>8.3L V16 Hybrid (1,800 HP)</td>
+                        <td><strong>$4,100,000</strong></td>
+                        <td>2</td>
+                        <td>Reserved</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Bugatti Bolide</strong></td>
+                        <td>8.0L Quad-Turbo W16 (1,825 HP)</td>
+                        <td><strong>$4,400,000</strong></td>
+                        <td>1</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Bugatti Chiron Super Sport</strong></td>
+                        <td>8.0L Quad-Turbo W16 (1,578 HP)</td>
+                        <td><strong>$3,900,000</strong></td>
+                        <td>3</td>
+                        <td>Available</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>Bugatti W16 Mistral</strong></td>
+                        <td>8.0L Quad-Turbo W16 (1,578 HP)</td>
+                        <td><strong>$5,000,000</strong></td>
+                        <td>1</td>
+                        <td>In Testing</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Bugatti Divo</strong></td>
+                        <td>8.0L Quad-Turbo W16 (1,500 HP)</td>
+                        <td><strong>$5,800,000</strong></td>
+                        <td>2</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Bugatti Centodieci</strong></td>
+                        <td>8.0L Quad-Turbo W16 (1,600 HP)</td>
+                        <td><strong>$9,000,000</strong></td>
+                        <td>1</td>
+                        <td>In Testing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <hr>
