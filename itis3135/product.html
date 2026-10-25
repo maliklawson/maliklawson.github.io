@@ -8,6 +8,30 @@
     <link rel="icon" type="image/jpeg" href="images/vecteezy_lion-logo.jpg"/>
 
     <style>
+        .tier-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .tier-card {
+            flex: 1 1 280px;
+            max-width: 350px;
+            border: 2px solid rgb(77, 76, 76);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgb(77, 76, 76);
+            box-sizing: border-box;
+        }
+
+        .card-title {
+            margin-top: 0;
+            border-bottom: 1px solid rgb(77, 76, 76);
+            padding-bottom: 8px;
+        }
+
         figure {
             border-radius: 6px;
             width: 100%; 
@@ -36,8 +60,7 @@
         
         <nav>
             <p>
-                <a href="#vip-tier">VIP Tier</a> |
-                <a href="#platinum-tier">Platinum Tier</a> |
+                <a href="#tier-packages">Tier Packages</a> |
                 <a href="#tier-selection">Tier Selection</a> |
                 <a href="#reservation">Reservation</a>
             </p>
@@ -45,8 +68,10 @@
         <hr>
         <p>This is the product landing page to market and showcase products and services.</p>
         
-        <section id="vip-tier">
-            <h3>VIP Tier: One of One</h3>
+        <!-- div class="tier-container" identifier available tier packages -->
+        <div class="tier-container">
+        <section class="tier-card" id="tier-packages">
+            <h3 class="card-title">VIP Tier: One of One</h3>
             <p><strong>Price: </strong>$5,500,000+</p>
             <ul>
                 <li>100% Unique Interior / Trim</li>
@@ -55,9 +80,9 @@
                 <li>Lifetime Factory Maintenance</li>
             </ul>
         </section>
-        <hr>
-        <section id="platinum-tier">
-            <h3>Platinum Tier: Customization</h3>
+    
+        <section class="tier-card">
+            <h3 class="card-title">Platinum Tier: Customization</h3>
             <p><strong>Price: </strong>$4,800,000</p>
             <ul>
                 <li>Custom Carbon</li>
@@ -66,9 +91,9 @@
             </ul>
         </section>
 
-        <hr>
-        <section id="gold-tier">
-            <h3>Gold Tier: Track Specification</h3>
+        
+        <section class="tier-card">
+            <h3 class="card-title">Gold Tier: Track Specification</h3>
                 <p><strong>Price: </strong>$4,100,000</p>
                 <ul>
                     <li>Exposed Carbon Bodywork</li>
@@ -76,6 +101,7 @@
                     <li>Private Track Consultation</li>
             </ul>
         </section>
+        </div>
 
         <hr>
         <section id="tier-selection">
