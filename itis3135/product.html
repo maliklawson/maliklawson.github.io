@@ -6,6 +6,18 @@
     <title>Malik Lawson's Mighty Lion || ITIS3135 || Product</title>
     <link rel="stylesheet" href="styles/default.css">
     <link rel="icon" type="image/jpeg" href="images/vecteezy_lion-logo.jpg"/>
+
+    <style>
+        img {
+            border-radius: 6px;
+            max-width: 500px;
+            max-height: 400px;
+            width: 500px; 
+            height: 400px;
+        }
+
+    </style>
+
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
@@ -16,6 +28,73 @@
     <hr>
     <main>
         <h2>Product</h2>
+        <p>This is the product landing page to market and showcase products and services.</p>
+
+        <nav>
+            <a href="#vip-tier">VIP Tier</a> |
+            <a href="#platinum-tier">Platinum Tier</a> |
+            <a href="#gold-tier">Gold Tier</a> |
+            <a href="#tier-selection">Tier Selection</a> |
+            <a href="#reservation">Reservation</a>
+
+        </nav>
+
+        <figure class="product-img">
+            <img src="images/bugatti-quad-turbocharged-8.0-liter-w16-engine.jpg" alt="bugatti two 8-cylinder engine blocks together with four turbochargers">
+            <figcaption><em>Bugatti two 8-cylinder W16 engine blocks together with four turbochargers.</em></figcaption>
+        </figure>
+<hr>
+        <section id="vip-tier">
+            <h3>VIP Tier</h3>
+            <p><strong>Price: </strong>$5,500,000+</p>
+            <ul>
+                <li>100% Unique Interior / Trim</li>
+                <li>Personalized Power Tuning</li>
+                <li>Private Track Delivery Event</li>
+                <li>Lifetime Factory Maintenance</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="platinum-tier">
+            <h3>Platinum Tier: Customization</h3>
+            <p><strong>Price: </strong>$4,800,000</p>
+            <ul>
+                <li>Custom Carbon</li>
+                <li>Titanium Exhaust Suite</li>
+                <li>Interior Embroidered Stitching</li>
+            </ul>
+        </section>
+
+        <hr>
+        <section id="gold-tier">
+            <h3>Gold Tier: Track Specification</h3>
+                <p><strong>Price: </strong>$4,100,000</p>
+                <ul>
+                    <li>Exposed Carbon Bodywork</li>
+                    <li>High-Downforce Aero Package</li>
+                    <li>Private Track Consultation</li>
+            </ul>
+        </section>
+
+        <hr>
+        <section id="tier-selection">
+            <h3>Tier Selection</h3>
+                <select>
+                    <option>Select a tier</option>
+                    <option>VIP Tier</option>
+                    <option>Platinum Tier</option>
+                    <option>Gold Tier</option>
+                </select>
+        </section>
+
+        <hr>
+        <section id="reservation">
+            <h3>Reservation</h3>
+            <p>Enter your email to receive private consultation details and allocation availability.</p>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <input type="submit" id="submit" value="Request Reservation Access">
+        </section>
+
     </main>
 
     <hr>
