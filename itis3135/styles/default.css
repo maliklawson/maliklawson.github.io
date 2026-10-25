@@ -12,7 +12,7 @@ body {
     color: #fff8dc;
     background-color: rgb(77, 76, 76);
     margin: auto;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 24px;
 }
@@ -23,7 +23,7 @@ header {
 }
 
 main {
-    max-width: 850px;
+    max-width: 880px;
   margin: 30px auto;
   color: rgb(77, 76, 76);
   background: #fff8dc;
