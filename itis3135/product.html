@@ -8,14 +8,17 @@
     <link rel="icon" type="image/jpeg" href="images/vecteezy_lion-logo.jpg"/>
 
     <style>
-        img {
+        figure {
             border-radius: 6px;
-            max-width: 500px;
-            max-height: 400px;
+            max-width: 100%;
             width: 500px; 
             height: 400px;
         }
 
+        figure img {
+            max-width: 100%;
+            display: block;
+        }
     </style>
 
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
@@ -28,22 +31,18 @@
     <hr>
     <main>
         <h2>Product</h2>
-
+        
         <nav>
-            <a href="#vip-tier">VIP Tier</a> |
-            <a href="#platinum-tier">Platinum Tier</a> |
-            <a href="#gold-tier">Gold Tier</a> |
-            <a href="#tier-selection">Tier Selection</a> |
-            <a href="#reservation">Reservation</a>
-
+            <p>
+                <a href="#vip-tier">VIP Tier</a> |
+                <a href="#platinum-tier">Platinum Tier</a> |
+                <a href="#tier-selection">Tier Selection</a> |
+                <a href="#reservation">Reservation</a>
+            </p>
         </nav>
-
-        <figure class="product-img">
-            <img src="images/bugatti-quad-turbocharged-8.0-liter-w16-engine.jpg" alt="bugatti two 8-cylinder engine blocks together with four turbochargers">
-            <figcaption><em>Bugatti two 8-cylinder W16 engine blocks together with four turbochargers.</em></figcaption>
-        </figure>
-<hr>
-<p>This is the product landing page to market and showcase products and services.</p>
+        <hr>
+        <p>This is the product landing page to market and showcase products and services.</p>
+        
         <section id="vip-tier">
             <h3>VIP Tier: One of One</h3>
             <p><strong>Price: </strong>$5,500,000+</p>
@@ -86,6 +85,7 @@
                     <option>Gold Tier</option>
                 </select>
         </section>
+        <br>
 
         <hr>
         <section id="reservation">
@@ -95,6 +95,10 @@
             <input type="submit" id="submit" value="Request Reservation Access">
         </section>
 
+        <figure>
+            <img src="images/bugatti-quad-turbocharged-8.0-liter-w16-engine.jpg" alt="bugatti two 8-cylinder engine blocks together with four turbochargers">
+            <figcaption><em>Bugatti's dual 8-cylinder W16 engine blocks with four turbochargers.</em></figcaption>
+        </figure>
     </main>
 
     <hr>
