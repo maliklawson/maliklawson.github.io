@@ -212,7 +212,7 @@
     }
   });
 
-  $('clear').addEventListener('click', () => {
+  $('clear-btn').addEventListener('click', () => {
     form.querySelectorAll('input:not([type="submit"]):not([type="reset"]), textarea').forEach((el) => { el.value = ''; });
     resetImage();
   });
