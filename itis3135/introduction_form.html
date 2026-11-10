@@ -6,6 +6,50 @@
     <title>Malik Lawson's Mighty Lion || ITIS3135 || Introduction Form</title>
     <link rel="stylesheet" href="styles/default.css">
     <link rel="icon" type="image/jpeg" href="images/vecteezy_lion-logo.jpg"/>
+
+    <style>
+    .course-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .course-group {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 12px;
+    }
+
+    fieldset {
+        padding: 5px 10px;
+        margin-bottom: 20px;
+    }
+
+    label, input {
+        margin-bottom: 5px;
+    }
+
+    .picture {
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .caption {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    button, input[type="submit"], input[type="reset"],input[type="button"] {
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    </style>
+
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
@@ -42,7 +86,7 @@
                 <input type="text" id="acknowledgment" name="acknowledgment" value="I acknowledge that this is a public document" placeholder="This is a public document acknowledgement" required>
 
                 <label for="acknowledgment-date">Acknowledgement Date (MM/DD/YYYY):</label>
-                <input type="number" id="acknowledgment-date" name="acknowledgment-date" value="11/06/2026" placeholder="MM/DD/YYYY" required>
+                <input type="text" id="acknowledgment-date" name="acknowledgment-date" value="11/06/2026" placeholder="MM/DD/YYYY" maxlength="10" required>
             </fieldset>
 
             <fieldset>
@@ -55,84 +99,122 @@
                 <input type="text" id="mascot-animal" name="mascot-animal" value="Lion" placeholder="Enter your mascot name" required>
 
                 <label for="divider">Divider Symbol (ie, ~, | , ♥️, etc):</label>
-                <input type="text" id="divider" name="divider" value="|" placeholder="Enter your divider symbol" required>
+                <input type="text" id="divider" name="divider" value="~" placeholder="Enter your divider symbol" required>
             </fieldset>
 
             <fieldset>
                 <legend><strong>Picture Information</strong></legend>
 
-                <label>Picture:</label>
+                <img class="picture" src="images/LinkedInImage.jpeg" alt="LinkedIn profile image" width="200" height="200">
+                <label for="picture-file">Picture:</label>
+                <input type="file" id="picture-file" name="picture-file" accept="image/*">
 
-                <label>Picture Caption:</label>
+                <label class="caption" for="picture-caption">Picture Caption:</label>
+                <input type="text" id="picture-caption" name="picture-caption" value="LinkedIn profile image" placeholder="Enter your pictures caption" required>
+
             </fieldset>
 
             <fieldset>
                 <legend><strong>Personal Statement Information</strong></legend>
 
-                <label>Personal Statement:</label>
+                <label for="personal-statement">Personal Statement:</label>
+                <textarea id="personal-statement" name="personal-statement" rows="4" placeholder="Provide a personal statement about yourself" required>I am a Computer Science major specializing in Human Computer Interaction. My goal is to build industry ready skills and prepare for a successful career in tech. Looking forward to the journey ahead.</textarea>
             </fieldset>
 
             <fieldset>
                 <legend><strong>Background Information</strong></legend>
 
-                <label>Personal Background:</label>
+                <label for="personal-background">Personal Background:</label>
+                <textarea id="personal-background" name="personal-background" rows="3" placeholder="Provide some personal background information about yourself" required>Reidsville native, moved to Charlotte in 2024.</textarea>
 
-                <label>Professional Background:</label>
+                <label for="professional-background">Professional Background:</label>
+                <textarea id="professional-background" name="professional-background" rows="3" placeholder="Provide some professional background information about yourself" required>Military veteran of nearly 7 years, now focused on completing my degree to secure employment in the tech industry.</textarea>
 
-                <label>Academic Background:</label>
+                <label for="academic-background">Academic Background:</label>
+                <textarea id="academic-background" name="academic-background" rows="3" placeholder="Provide some academic background information about yourself" required>Computer Science Human Computer Interaction class of 2028.</textarea>
             </fieldset>
 
             <fieldset>
                 <legend><strong>Computer Information & Work Location</strong></legend>
 
-                <label>Primary Work Computer (type, OS, and version):</label>
+                <label for="work-cpu">Primary Work Computer (type, OS, and version):</label>
+                <input type="text" id="work-cpu" name="work-cpu" value="Macbook Air (macOS)" placeholder="Provide a primary work computer" required>
 
-                <label>Primary Work Location:</label>
+                <label for="work-location">Primary Work Location:</label>
+                <input type="text" id="work-location" name="work-location" value="Home office space." placeholder="Provide a primary work location" required>
 
-                <label>Alternate Computer & Location:</label>
+                <label for="alt-cpu-location">Alternate Computer & Location:</label>
+                <input type="text" id="alt-cpu-location" name="alt-cpu-location" value="Desktop & UNCC library." placeholder="Provide an alternate computer & location" required>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="course-list">
                 <legend><strong>Courses I'm Taking, & Why</strong></legend>
-
+                <ol id="courses" class="course-list"></ol>
+                <button type="button" id="add-course">Add course</button>
             </fieldset>
+            <br>
 
             <fieldset>
                 <legend><strong>Favorite Quote</strong></legend>
 
-                <label>Quote:</label>
+                <label for="quote">Quote:</label>
+                <input type="text" id="quote" name="quote" value="“A wise man will always follow the footsteps of great men”" placeholder="Provide a quote" required>
 
-                <label>Author of Quote:</label>
+                <label for="author-quote">Author of Quote:</label>
+                <input type="text" id="author-quote" name="author-quote" value="Niccolo Machiavelli" placeholder="Provide the author of the quote">
             </fieldset>
 
             <fieldset>
                 <legend><strong>Optional Inputs</strong></legend>
 
-                <label>Funny/Interesting Item to Remember Me by:</label>
+                <label for="interesting-thing">Funny/Interesting Item to Remember Me by (optional):</label>
+                <input type="text" id="interesting-thing" name="interesting-thing" placeholder="Provide a funny/interesting thing to remember you by">
 
-                <label>I'd Also Like to Share:</label>
+                <label for="share">I'd Also Like to Share (optional):</label>
+                <input type="text" id="share" name="share" placeholder="Provide something addtional you'd like to share">
             </fieldset>
 
             <fieldset>
                 <legend><strong>Personal Links</strong></legend>
 
-                <label>CLT Web:</label>
+                <label for="clt-web">CLT Web:</label>
+                <input type="text" id="clt-web" name="clt-web" value="https://webpages.charlotte.edu/mlawso23/" placeholder="Provide the link to your CLT Webpage" required>
 
-                <label>GitHub.io:</label>
+                <label for="github-io">GitHub.io:</label>
+                <input type="text" id="github-io" name="github-io" value="https://maliklawson.github.io" placeholder="Provide the link to your GitHub.io" required>
 
-                <label>GitHub:</label>
+                <label for="github">GitHub:</label>
+                <input type="text" id="github" name="github" value="https://github.com/maliklawson" placeholder="Provide the link to your GitHub" required>
 
-                <label>freeCodeCamp:</label>
+                <label for="freecodecamp">freeCodeCamp:</label>
+                <input type="text" id="freecodecamp" name="freecodecamp" value="https://www.freecodecamp.org/mlawso23" placeholder="Provide the link to your freeCodeCamp account" required>
 
-                <label>Codecademy:</label>
+                <label for="codecademy">Codecademy:</label>
+                <input type="text" id="codecademy" name="codecademy" value="https://www.codecademy.com/profiles/mlawso23" placeholder="Provide the link to your Codecademy account" required>
 
-                <label>LinkedIn:</label>
+                <label for="linkedin">LinkedIn:</label>
+                <input type="text" id="linkedin" name="linkedin" value="https://www.linkedin.com/in/malik-lawson-b0a8ab3b2/" placeholder="Provide the link to your LinkedIn account">
             </fieldset>
+
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="clear-btn">Clear</button>
+            </p>
+
+            <!-- div class="form-actions" - Form Controls & M13 Export Buttons -->
+            <div class="form-actions" style="margin-top: 20px;">
+                    <button type="button" id="gen-html">Generate HTML</button>
+                    <button type="button" id="gen-json">Generate JSON</button>
+                    <button type="button" id="gen-xml">Generate XML</button>
+                </div>
         </form>
+
     </main>
 
     <hr>
     <!-- Footer -->
+    <script src="scripts/introduction.js"></script>
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.min.js"></script>
 </body>
