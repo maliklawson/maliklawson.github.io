@@ -19,10 +19,27 @@
         align-items: center;
         gap: 5px;
         margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .course-group input[name="department"] {
+        flex: 0 0 60px;
+    }
+
+    .course-group input[name="number"] {
+        flex: 0 0 70px;
+    }
+
+    .course-group input[name="courseName"] {
+        flex: 1 1 180px;
+    }
+
+    .course-group input[name="reason"] {
+        flex: 2 1 290px;
     }
 
     fieldset {
-        padding: 5px 10px;
+        padding: 5px;
         margin-bottom: 20px;
     }
 
@@ -30,7 +47,7 @@
         margin-bottom: 5px;
     }
 
-    .picture {
+    #photo-preview {
         display: block;
         margin-bottom: 10px;
         border-radius: 8px;
@@ -48,6 +65,9 @@
         border-radius: 6px;
         cursor: pointer;
     }
+
+
+
     </style>
 
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
@@ -105,7 +125,7 @@
             <fieldset>
                 <legend><strong>Picture Information</strong></legend>
 
-                <img class="picture" src="images/LinkedInImage.jpeg" alt="LinkedIn profile image" width="200" height="200">
+                <img id="photo-preview" src="images/LinkedInImage.jpeg" alt="LinkedIn profile image" width="200" height="200">
                 <label for="picture-file">Picture:</label>
                 <input type="file" id="picture-file" name="picture-file" accept="image/*">
 
@@ -209,6 +229,9 @@
                     <button type="button" id="gen-xml">Generate XML</button>
                 </div>
         </form>
+
+        <!-- id="result" linked with JS -->
+        <div id="result" hidden></div>
 
     </main>
 
