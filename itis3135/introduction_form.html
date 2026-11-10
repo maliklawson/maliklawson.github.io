@@ -47,6 +47,21 @@
         margin-bottom: 5px;
     }
 
+    input[type="text"], input[type="url"], textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="text"], input[type="url"], textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 1em;
+    }
+
     #photo-preview {
         display: block;
         margin-bottom: 10px;
@@ -198,22 +213,22 @@
                 <legend><strong>Personal Links</strong></legend>
 
                 <label for="clt-web">CLT Web:</label>
-                <input type="text" id="clt-web" name="clt-web" value="https://webpages.charlotte.edu/mlawso23/" placeholder="Provide the link to your CLT Webpage" required>
+                <input type="url" id="clt-web" class="link-input" data-name="clt-web" value="https://webpages.charlotte.edu/mlawso23/" placeholder="Provide the link to your CLT Webpage" required>
 
                 <label for="github-io">GitHub.io:</label>
-                <input type="text" id="github-io" name="github-io" value="https://maliklawson.github.io" placeholder="Provide the link to your GitHub.io" required>
+                <input type="url" id="github-io" class="link-input" data-name="github-io" value="https://maliklawson.github.io" placeholder="Provide the link to your GitHub.io" required>
 
                 <label for="github">GitHub:</label>
-                <input type="text" id="github" name="github" value="https://github.com/maliklawson" placeholder="Provide the link to your GitHub" required>
+                <input type="url" id="github" class="link-input" data-name="github" value="https://github.com/maliklawson" placeholder="Provide the link to your GitHub" required>
 
                 <label for="freecodecamp">freeCodeCamp:</label>
-                <input type="text" id="freecodecamp" name="freecodecamp" value="https://www.freecodecamp.org/mlawso23" placeholder="Provide the link to your freeCodeCamp account" required>
+                <input type="url" id="freecodecamp" class="link-input" data-name="freecodecamp" value="https://www.freecodecamp.org/mlawso23" placeholder="Provide the link to your freeCodeCamp account" required>
 
                 <label for="codecademy">Codecademy:</label>
-                <input type="text" id="codecademy" name="codecademy" value="https://www.codecademy.com/profiles/mlawso23" placeholder="Provide the link to your Codecademy account" required>
+                <input type="url" id="codecademy" class="link-input" data-name="codecademy" value="https://www.codecademy.com/profiles/mlawso23" placeholder="Provide the link to your Codecademy account" required>
 
                 <label for="linkedin">LinkedIn:</label>
-                <input type="text" id="linkedin" name="linkedin" value="https://www.linkedin.com/in/malik-lawson-b0a8ab3b2/" placeholder="Provide the link to your LinkedIn account">
+                <input type="url" id="linkedin" class="link-input" data-name="linkedin" value="https://www.linkedin.com/in/malik-lawson-b0a8ab3b2/" placeholder="Provide the link to your LinkedIn account">
             </fieldset>
 
             <p>
