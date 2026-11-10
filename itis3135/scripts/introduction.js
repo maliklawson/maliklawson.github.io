@@ -28,7 +28,7 @@
       '<input type="text" name="number" value="' + esc(c[1]) + '" placeholder="No. (3135)" aria-label="Course number" required> ' +
       '<input type="text" name="courseName" value="' + esc(c[2]) + '" placeholder="Course name" aria-label="Course name" required> ' +
       '<input type="text" name="reason" value="' + esc(c[3]) + '" placeholder="Reason for taking it" aria-label="Reason for taking it" required> ' +
-      '<button type="button" class="delete-course" aria-label="Delete this course" style="color:red;">Delete</button></li>';
+      '<button type="button" class="delete-course" aria-label="Delete this course" style="color:rgb(239, 238, 238);">Delete</button></li>';
   }
   
   coursesEl.innerHTML = INITIAL_COURSES.map(courseRow).join('');
