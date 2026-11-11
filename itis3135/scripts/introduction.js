@@ -13,8 +13,8 @@
   // Assignment data model schema matching requirements
   const DEFAULT_DATA = {
     firstName: "Malik",
-    middleName: "",
-    nickname: "",
+    middleName: "Ra'quon",
+    nickname: "Don Gatti",
     lastName: "Lawson",
     acknowledgment: "I understand that this is a public document, and I won't put anything here I wouldn't want anyone to see.",
     acknowledgmentDate: "11/06/2026",
@@ -82,7 +82,7 @@
   const esc = (s) => String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
-  /* ---------- Helper Functions (Defined before use) ---------- */
+  /* ---------- Helper Functions ---------- */
   function updateDeleteButtons() {
     const only = coursesEl.children.length < 2;
     coursesEl.querySelectorAll('.delete-course').forEach((b) => { b.disabled = only; });
@@ -237,7 +237,8 @@
     xml:  { label: 'XML',  ext: 'xml',  mime: 'application/xml', build: (d) => '<?xml version="1.0" encoding="UTF-8"?>\n' + toXml('introduction', d, '') }
   };
 
-  function generate(kind) {
+  function generate(kind, ev) {
+    if (ev) ev.preventDefault();
     const f = FORMATS[kind];
     let box = $('out-' + kind);
     if (!box) {
@@ -256,7 +257,7 @@
   ['html', 'json', 'xml'].forEach((k) => {
     const btn = $('gen-' + k);
     if (btn) {
-      btn.addEventListener('click', () => generate(k));
+      btn.addEventListener('click', (ev) => generate(k, ev));
     }
   });
 
@@ -287,13 +288,16 @@
   form.addEventListener('submit', (ev) => {
     ev.preventDefault();
     
+    // Read whatever is currently entered in the inputs and render it into the result container
     result.innerHTML = entryHTML(collect()) + 
       '<p style="text-align:center; margin-top:30px;"><button type="button" id="reset-form-btn" style="padding:10px 20px; font-weight:bold; cursor:pointer;">Reset and fill out the form again</button></p>';
     
-    form.hidden = true;
-    $('form-heading').hidden = true;
+    // Keep form visible so user inputs remain on screen
+    form.hidden = false;
     result.hidden = false;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Smoothly scroll down to view the rendered results below the form
+    result.scrollIntoView({ behavior: 'smooth' });
   });
 
   form.addEventListener('reset', () => {
@@ -310,7 +314,7 @@
     if (ev.target.id === 'reset-form-btn') {
       ev.preventDefault();
       showForm();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      form.scrollIntoView({ behavior: 'smooth' });
     }
   });
 
