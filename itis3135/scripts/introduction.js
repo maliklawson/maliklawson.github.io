@@ -13,8 +13,8 @@
   // Assignment data model schema matching requirements
   const DEFAULT_DATA = {
     firstName: "Malik",
-    middleName: "Ra'quon",
-    nickname: "Don Gatti",
+    middleName: "",
+    nickname: "",
     lastName: "Lawson",
     acknowledgment: "I understand that this is a public document, and I won't put anything here I wouldn't want anyone to see.",
     acknowledgmentDate: "11/06/2026",
