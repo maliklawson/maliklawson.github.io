@@ -1,0 +1,85 @@
+{
+  "firstName": "Malik",
+  "middleName": "",
+  "nickname": "",
+  "lastName": "Lawson",
+  "acknowledgment": "I acknowledge that this is a public document",
+  "acknowledgmentDate": "11/06/2026",
+  "prettyNameDivider": "~",
+  "adjectives": "Mighty",
+  "animal": "Lion",
+  "img": "images/LinkedInImage.jpeg",
+  "pictureAlt": "LinkedIn profile image",
+  "caption": "LinkedIn profile image",
+  "personalInfo": {
+    "statement": "I am a Computer Science major specializing in Human Computer Interaction. My goal is to build industry ready skills and prepare for a successful career in tech. Looking forward to the journey ahead.",
+    "personalBackground": "Reidsville native, moved to Charlotte in 2024.",
+    "professionalBackground": "Military veteran of nearly 7 years, now focused on completing my degree to secure employment in the tech industry.",
+    "academicBackground": "Computer Science Human Computer Interaction class of 2028.",
+    "primaryWorkComputer": "Macbook Air (macOS)",
+    "primaryWorkLocation": "Home office space.",
+    "alternateComputerLocation": "Desktop & UNCC library."
+  },
+  "courses": [
+    {
+      "department": "ITSC",
+      "courseNumber": "3688",
+      "courseTitle": "Computing and AI: Ethics, Society & Communication",
+      "reasonForTaking": "To learn professional soft skills used in the tech industry."
+    },
+    {
+      "department": "ITIS",
+      "courseNumber": "4350",
+      "courseTitle": "Design Prototyping",
+      "reasonForTaking": "To gain experience with design techniques."
+    },
+    {
+      "department": "ITIS",
+      "courseNumber": "3135",
+      "courseTitle": "Front-End Web Development",
+      "reasonForTaking": "To understand the steps to build web applications."
+    },
+    {
+      "department": "ITSC",
+      "courseNumber": "2175",
+      "courseTitle": "Logic and Algorithms",
+      "reasonForTaking": "Required for my degree."
+    },
+    {
+      "department": "ITIS",
+      "courseNumber": "3140",
+      "courseTitle": "User Experience Methods",
+      "reasonForTaking": "To grasp UX/UI concepts used in the design process."
+    }
+  ],
+  "quote": "“A wise man will always follow the footsteps of great men”",
+  "quoteAuthor": "Niccolo Machiavelli",
+  "funnyItem": "",
+  "somethingToShare": "",
+  "footerLinks": [
+    {
+      "label": "clt-web",
+      "url": "https://webpages.charlotte.edu/mlawso23/"
+    },
+    {
+      "label": "github-io",
+      "url": "https://maliklawson.github.io"
+    },
+    {
+      "label": "github",
+      "url": "https://github.com/maliklawson"
+    },
+    {
+      "label": "freecodecamp",
+      "url": "https://www.freecodecamp.org/mlawso23"
+    },
+    {
+      "label": "codecademy",
+      "url": "https://www.codecademy.com/profiles/mlawso23"
+    },
+    {
+      "label": "linkedin",
+      "url": "https://www.linkedin.com/in/malik-lawson-b0a8ab3b2/"
+    }
+  ]
+}
