@@ -208,7 +208,7 @@
     if (d.somethingToShare) h += bullet('I’d Also Like to Share:', d.somethingToShare);
     h += '</ul>\n<blockquote>\n  <p>' + esc(d.quote) + '</p>\n  <cite>&mdash; ' + esc(d.quoteAuthor) + '</cite>\n</blockquote>\n';
     h += '<p><em>' + esc(d.acknowledgment) + '</em> &mdash; <strong>' + esc(d.acknowledgmentDate) + '</strong></p>\n<hr>\n';
-    h += '<p style="text-align:center;">' + d.footerLinks.map((l) => '<a href="' + esc(l.url) + '" target="_blank">' + esc(l.label) + '</a>').join(' ' + esc(d.prettyNameDivider) + ' ') + '</p>\n';
+    h += '<p style="text-align:center;">' + d.footerLinks.map((l) => '<a href="' + esc(l.url) + '" target="_blank">' + esc(l.label) + '</a>').join(' | ') + '</p>\n';
     return h;
   }
 
