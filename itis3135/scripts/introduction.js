@@ -191,7 +191,7 @@
 
     const bullet = (label, text) => '    <li><strong>' + esc(label) + '</strong> ' + esc(text) + '</li>\n';
     
-    let h = '<h3>' + esc(headerTitle) + '</h3>\n';
+    let h = '<h3 style="text-align:center;">' + esc(headerTitle) + '</h3>\n';
     h += '<figure style="text-align:center;">\n  <img src="' + esc(d.img) + '" width="250" height="250" alt="' + esc(d.pictureAlt) + '">\n';
     h += '  <figcaption><em>' + esc(d.caption) + '</em></figcaption>\n</figure>\n';
     h += '<p>' + esc(d.personalInfo.statement) + '</p>\n<ul>\n';
@@ -201,7 +201,7 @@
     h += bullet('Primary Work Computer:', d.personalInfo.primaryWorkComputer);
     h += bullet('Primary Work Location:', d.personalInfo.primaryWorkLocation);
     h += bullet('Alternate Computer & Location:', d.personalInfo.alternateComputerLocation);
-    h += '    <li><strong>Courses I’m taking & Why:</strong>\n      <ul>\n';
+    h += '    <li><strong>Courses I’m taking & Why:</strong>\n      <ol>\n';
     h += d.courses.map((c) => '        <li><strong>' + esc(c.department) + ' ' + esc(c.courseNumber) + ' - ' + esc(c.courseTitle) + ':</strong> ' + esc(c.reasonForTaking) + '</li>\n').join('');
     h += '      </ul>\n    </li>\n';
     if (d.funnyItem) h += bullet('Funny/Interesting Item to Remember Me by:', d.funnyItem);
