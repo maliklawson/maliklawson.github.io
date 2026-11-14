@@ -290,7 +290,7 @@
     
     // Read whatever is currently entered in the inputs and render it into the result container
     result.innerHTML = entryHTML(collect()) + 
-      '<p style="text-align:center; margin-top:30px;"><button type="button" id="reset-form-btn" style="padding:10px 20px; font-weight:bold; cursor:pointer;">Reset and fill out the form again</button></p>';
+      '<p style="text-align:center; margin-top:30px;"><button type="button" id="reset-form-btn" style="padding:10px 20px; font-weight:bold; cursor:pointer;"><strong>Reset and fill out the form again</strong></button></p>';
     
     // Keep form visible so user inputs remain on screen
     form.hidden = false;
