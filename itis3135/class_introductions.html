@@ -8,6 +8,27 @@
     <link rel="icon" type="image/jpeg" href="images/vecteezy_lion-logo.jpg"/>
 
     <style>
+        .newest-card, .class-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3px;
+            border: 2px solid;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px black;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .newest-card:hover, .class-row:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgb(255, 117, 67);
+        }
     </style>
 
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
