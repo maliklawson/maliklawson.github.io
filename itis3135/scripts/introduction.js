@@ -2,7 +2,7 @@
   'use strict';
 
   const $ = (id) => document.getElementById(id);
-  const DEFAULT_IMG = 'images/LinkedInImage.jpeg';
+  const DEFAULT_IMG = 'images/LinkedInImage.png';
   const form = $('intro-form');
   const result = $('result');
   const coursesEl = $('courses');

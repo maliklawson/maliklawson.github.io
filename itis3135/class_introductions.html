@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Lawson's Mighty Lion || ITIS3135 || Class Introductions</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/jpeg" href="images/vecteezy_lion-logo.jpg"/>
+
+    <style>
+    </style>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div data-include="components/header.html"></div>
+    <script src="scripts/include.min.js"></script>
+
+    <hr>
+
+    <main>
+        <h2>Class Introductions</h2>
+        <p>This page gathers live class introduction data from the API (Application Programming Interface) and displays each student's profile card.</p>
+
+        <!-- Displays most recent submission -->
+        <section class="newest">
+            <h3>Newest Submission</h3>
+            <article id="newest" class="newest-card">
+                <h4 id="newest-heading">Connecting to class server...</h4>
+            </article>
+        </section>
+
+        <!-- Displays submissions for all classmates -->
+         <section class="class">
+            <h3>Class Submissions</h3>
+            <!-- div id="class" class="class-row" for class submissions -->
+            <div id="class" class="class-row"></div>
+         </section>
+
+         <!-- Data Section -->
+         <section class="data">
+            <h3>Data</h3>
+            <ul id="data" class="data-strip">
+                <li>Loading data...</li>
+            </ul>
+         </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+
+    <script src="scripts/class_introductions.js"></script>
+</body>
+</html>
