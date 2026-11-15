@@ -8,26 +8,36 @@
     <link rel="icon" type="image/jpeg" href="images/vecteezy_lion-logo.jpg"/>
 
     <style>
-        .newest-card, .class-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 3px;
-            border: 2px solid;
+        .class-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .newest-card, .student-card {
+            border: 2px solid rgba(128, 128, 128, 0.4);
             border-radius: 12px;
             padding: 1.5rem;
-            box-shadow: 0 4px 10px black;
-            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 0.03);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin-bottom: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .newest-card:hover, .class-row:hover {
+        .newest-card:hover, .student-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 12px 20px rgb(255, 117, 67);
+        }
+
+        .student-card img, .newest-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
         }
     </style>
 
