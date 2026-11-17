@@ -67,6 +67,10 @@ footer a:hover {
     color: rgb(255, 117, 67);
 }
 
+.center-footer {
+    text-align: center;
+}
+
 @media (max-width: 800px) {
     img {
         width: 100%;
