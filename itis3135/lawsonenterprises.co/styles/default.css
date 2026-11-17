@@ -57,12 +57,16 @@ ul {
 
 a:link, a:visited {
     text-decoration: none;
-    color: rgb(174, 148, 2);
+    color: rgb(155, 0, 0);
+    
 }
 
-a:hover, a:active {
+a:hover, a:active, a:focus {
     text-decoration: underline;
-    color: rgb(125, 125, 125);
+    color: #FAF9F6;
+    background: #3C4044;
+    border: 1px solid rgb(174, 148, 2);
+    border-color: rgb(174, 148, 2);
 }
 
 footer {
