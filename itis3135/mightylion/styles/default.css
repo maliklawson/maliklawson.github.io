@@ -1,3 +1,33 @@
 header {
     text-align: center;
+    padding: 20px;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #DDDCDB;
+    color: rgb(1, 1, 1);
+    font-family: Verdana, Geneva;
+    padding: 24px;
+}
+
+main {
+    font-family: Helvetica, tahoma, t;
+    max-width: 900px;
+    background-color: #3C4044;
+    color: #DDDCDB;
+    padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(1, 1, 1);
+  border-right: 6px solid #ECB914;
+  border-bottom: 2px solid #ECB914;
+}
+
+@media (max-width: 700px) {
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+
 }
