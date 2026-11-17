@@ -24,6 +24,26 @@ main {
   border-bottom: 2px solid #ECB914;
 }
 
+.company-name {
+    color: #ECB914;
+}
+
+a:visited, a:link, a:active {
+    color: brown;
+}
+
+a:hover {
+    color: rgb(255, 117, 67);;
+}
+
+footer a:visited, footer a:link, footer a:active {
+    color: brown;
+}
+
+footer a:hover {
+    color: rgb(255, 117, 67);
+}
+
 @media (max-width: 700px) {
     img {
         width: 100%;
