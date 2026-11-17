@@ -55,16 +55,24 @@ a:visited, a:link, a:active {
     color: brown;
 }
 
-a:hover {
-    color: rgb(255, 117, 67);;
+a:hover, a:focus {
+    color: #ECB914;
+    background: #3C4044;
+    text-decoration: underline;
+    border: 1px solid #ECB914;
+    border-color: #ECB914;
 }
 
 footer a:visited, footer a:link, footer a:active {
     color: brown;
 }
 
-footer a:hover {
-    color: rgb(255, 117, 67);
+footer a:hover, a:focus {
+    background: #3C4044;
+    color: #ECB914;
+    text-decoration: underline;
+    border: 1px solid #ECB914;
+    border-color:
 }
 
 .center-footer {
