@@ -15,6 +15,10 @@
             margin-top: 1rem;
         }
 
+        #newest img{
+            width: auto;
+        }
+
         .newest-card, .student-card {
             border: 2px solid rgba(128, 128, 128, 0.4);
             border-radius: 12px;
@@ -24,7 +28,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
         }
 
         .newest-card:hover, .student-card:hover {
@@ -34,10 +40,11 @@
 
         .student-card img, .newest-card img {
             width: 100%;
-            height: 180px;
-            object-fit: cover;
+            height: 220px;
+            object-fit: contain;
             border-radius: 8px;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0 auto 0.75rem auto;
+            display: block;
         }
     </style>
 
@@ -58,7 +65,7 @@
         <!-- Displays most recent submission -->
         <section class="newest">
             <h3>Newest Submission</h3>
-            <article id="newest" class="newest-card">
+            <article id="newest" class="newest-card" style="text-align:center; display:flex; flex-direction:column; align-items:center;">
                 <h4 id="newest-heading">Connecting to class server...</h4>
             </article>
         </section>
@@ -67,7 +74,7 @@
          <section class="class">
             <h3>Class Submissions</h3>
             <!-- div id="class" class="class-row" for class submissions -->
-            <div id="class" class="class-row"></div>
+            <div id="class" class="class-row" style="text-align:center; border-radius: 8px;"></div>
          </section>
 
          <!-- Data Section -->

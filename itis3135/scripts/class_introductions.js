@@ -73,33 +73,54 @@ document.addEventListener("DOMContentLoaded", async function () {
                 newestHeading.textContent = fullName;
             }
 
+            // Create a vertical flex container centered horizontally
             const detailsDiv = document.createElement("div");
+            detailsDiv.style.display = "flex";
+            detailsDiv.style.flexDirection = "column"; // Stacks everything top to bottom
+            detailsDiv.style.alignItems = "center";    // Centers everything horizontally
+            detailsDiv.style.textAlign = "center";     // Centers all text
+            detailsDiv.style.gap = "0.75rem";
+            detailsDiv.style.width = "100%";
+
             const imgSrc = imgOf(record);
             
+            // 1. Image (Top)
             if (imgSrc) {
                 const img = document.createElement("img");
                 img.src = imgSrc;
                 img.alt = fullName;
-                img.style.maxWidth = "180px";
+                img.style.width = "200px";
+                img.style.height = "auto";
+                img.style.objectFit = "contain";
+                img.style.borderRadius = "8px";
                 img.style.display = "block";
-                img.style.marginBottom = "0.75rem";
-                img.style.borderRadius = "6px";
+                img.style.margin = "0 auto";
                 detailsDiv.appendChild(img);
             }
 
+            // Note: Your HTML already has <h4 id="newest-heading">Name</h4> right above this container,
+            // so Name naturally appears right under the image.
+
+            // 3. Mascot Name
             if (mascot) {
                 detailsDiv.appendChild(el("p", null, "Mascot: " + mascot));
             }
 
+            // 4. Quote & 5. Quote Author
             if (quote.text) {
                 const said = document.createElement("blockquote");
+                said.style.margin = "0.5rem 0";
+                said.style.border = "none";
                 said.appendChild(el("p", null, "“" + quote.text + "”"));
-                said.appendChild(el("cite", null, "— " + (quote.author || "unknown")));
+                if (quote.author) {
+                    said.appendChild(el("cite", null, "— " + quote.author));
+                }
                 detailsDiv.appendChild(said);
             }
 
+            // 6. Submission Date (Bottom)
             if (record.lastUpdated) {
-                detailsDiv.appendChild(el("p", null, "Submitted: " + record.lastUpdated.slice(0, 10)));
+                detailsDiv.appendChild(el("p", "card-date", "Submitted: " + record.lastUpdated.slice(0, 10)));
             }
 
             newest.appendChild(detailsDiv);
@@ -122,6 +143,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         sorted.forEach(function (record) {
             const card = el("article", "student-card");
             const fullName = nameOf(record);
+            const mascot = mascotOf(record);
             const quote = quoteOf(record);
             const imgSrc = imgOf(record);
 
@@ -130,15 +152,19 @@ document.addEventListener("DOMContentLoaded", async function () {
                 img.src = imgSrc;
                 img.alt = fullName;
                 img.style.width = "100%";
-                img.style.height = "160px";
-                img.style.objectFit = "cover";
-                img.style.borderRadius = "6px";
+                img.style.height = "220px";
+                img.style.objectFit = "contain";
+                img.style.borderRadius = "8px";
                 img.style.marginBottom = "0.75rem";
                 card.appendChild(img);
             }
 
             // Name heading
             card.appendChild(el("h4", null, fullName));
+
+            if (mascot) {
+                card.appendChild(el("p", "card-mascot", "Mascot: " + mascot));
+            }
 
             // Quote & Author
             if (quote.text) {
