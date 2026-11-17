@@ -28,6 +28,14 @@ main {
     color: #ECB914;
 }
 
+.home-rims {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    padding: 21px;
+    margin: auto;
+}
+
 a:visited, a:link, a:active {
     color: brown;
 }
