@@ -75,6 +75,10 @@ footer a:hover, a:focus {
     border-color: #ECB914;
 }
 
+.course-home {
+    text-align: center;
+}
+
 .center-footer {
     text-align: center;
 }
