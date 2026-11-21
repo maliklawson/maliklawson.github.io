@@ -129,3 +129,23 @@ h4 {
 .service-card {
     padding-top: 8px;
 }
+
+/* Styling for zone quote checker */
+#mobile-quote-form input {
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 500;
+    width: auto;
+}
+
+#submit-quote-btn {
+    background-color: brown; 
+    color: rgb(253, 253, 253); 
+    cursor: pointer; 
+    font-size: .9rem; 
+    border-radius: 5px;
+}
+
+#mobile-quote-form > div {
+    padding-bottom: 10px;
+}

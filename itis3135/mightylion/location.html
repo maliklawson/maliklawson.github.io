@@ -24,10 +24,42 @@
         <div class="home-photos">
             <img src="images/shiny-black-alloy-wheelpexels-amar-14228044.jpg" alt="Close-up of a shiny black alloy wheel on a parked luxury car, showcasing modern design.">
         </div>
+        <hr>
+
+        <!-- Dynamic Functionality #3: Service-Area Checker & Validated Mobile Quote Form -->
+        <section id="dispatch-checker" aria-labelledby="dispatch-heading">
+            <h3 id="dispatch-heading">Check Mobile Coverage &amp; Request a Quote</h3>
+            <form id="mobile-quote-form" novalidate>
+                <div>
+                    <label for="client-name"><strong class="company-name">Full Name</strong>:</label>
+                    <input type="text" id="client-name" name="clientName" required placeholder="Jane Doe">
+                </div>
+
+                <div>
+                    <label for="client-email"><strong class="company-name">Email Address</strong>:</label>
+                    <input type="email" id="client-email" name="clientEmail" required placeholder="jane@example.com">
+                </div>
+
+                <div>
+                    <label for="service-zip"><strong class="company-name">Charlotte ZIP Code</strong>:</label>
+                    <input type="text" id="service-zip" name="serviceZip" maxlength="5" required placeholder="28202">
+                </div>
+
+                <div>
+                    <label for="vehicle-info"><strong class="company-name">Vehicle (Year, Make, Model)</strong>:</label>
+                    <input type="text" id="vehicle-info" name="vehicleInfo" required placeholder="2023 Honda Accord">
+                </div>
+
+                <button type="submit" id="submit-quote-btn">Verify Coverage & Preview Request</button>
+            </form>
+
+            <div id="form-feedback" role="region" aria-live="polite"></div>
+        </section>
     </main>
 
     <!-- Footer -->
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.min.js"></script>
+    <script src="scripts/zone-quote-checker.js" defer></script>
 </body>
 </html>
