@@ -24,10 +24,26 @@
         <div class="home-photos">
             <img src="images/black-alloy-wheel-pexels-introspectivedsgn-32609646.jpg" alt="Detailed close-up of a shiny black alloy wheel with RTX branding, showcasing intricate design.">
         </div>
+        <hr>
+
+        <!-- Dynamic Functionality #2: Filterable Service Cards & Care Accordions -->
+        <section id="service-explorer" aria-labelledby="explorer-heading">
+            <h3 id="explorer-heading">Interactive Service Packages &amp; Care Guides</h3>
+            <div id="filter-controls" role="group" aria-label="Filter services by category">
+                <button type="button" class="filter-btn" data-category="tint" aria-pressed="false">Ceramic Tint</button>
+                <button type="button" class="filter-btn" data-category="wheels" aria-pressed="false">Custom Wheels</button>
+                <button type="button" class="filter-btn" data-category="care" aria-pressed="false">Mobile Protection</button>
+
+                <button type="button" class="filter-btn" data-category="all" aria-pressed="true">All Services</button>
+            </div>
+            <p id="filter-status" role="status" aria-live="polite">Showing all 4 service packages.</p>
+            <div id="service-cards-container"></div>
+        </section>
     </main>
 
     <!-- Footer -->
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.min.js"></script>
+    <script src="scripts/service-explorer.js" defer></script>
 </body>
 </html>

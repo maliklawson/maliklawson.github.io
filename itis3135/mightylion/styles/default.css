@@ -104,3 +104,28 @@ footer a:hover, a:focus {
     width: auto;
 }
 
+/* Styling for service packages & care guides */
+.filter-btn {
+    background-color: brown; 
+    color: rgb(253, 253, 253); 
+    cursor: pointer; 
+    font-size: .9rem; 
+    border-radius: 5px;
+}
+
+.service-card button {
+    background-color: brown; 
+    color: rgb(253, 253, 253); 
+    cursor: pointer; 
+    font-size: .9rem; 
+    border-radius: 5px;
+}
+
+h4 {
+    color: #ECB914;
+    font-weight: bold;
+}
+
+.service-card {
+    padding-top: 8px;
+}
