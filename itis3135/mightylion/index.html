@@ -26,12 +26,66 @@
             <img  src="images/black-suv-pexels-garvin-st-villier-719266-14583865.jpg" alt="Elegant side view of a luxury black SUV highlighting its sleek design and sophistication.">
             <img  src="images/stylish-car-rims-pexels-ihsanaditya-5661690.jpg" alt="Close-up of stylish car rims arranged on shelves in a dimly lit warehouse.">
         </div>
+
+        <hr>
+         <!-- Dynamic Functionality #1: Interactive Mobile Package Estimator -->
+        <section id="package-estimator" aria-labelledby="estimator-heading">
+            <h3 id="estimator-heading">Instant Mobile Package Estimator</h3>
+            <p>Customize your mobile setup to preview estimated pricing, protection specs, and on-site installation time.</p>
+
+            <form id="estimator-form">
+                <div>
+                    <!-- class="company-name" is to style company name or to highlight phrases -->
+                    <label for="vehicle-class"><strong class="company-name">Vehicle Type</strong>:</label>
+                    <select id="vehicle-class" name="vehicleClass">
+                        <option value="sedan" selected>Sedan / Coupe</option>
+                        <option value="suv">SUV / Crossover</option>
+                        <option value="truck">Full-Size Truck / Luxury SUV</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- class="company-name" is to style company name or to highlight phrases -->
+                    <label for="tint-package"><strong class="company-name">Ceramic Window Tint</strong>:</label>
+                    <select id="tint-package" name="tintPackage">
+                        <option value="none">None</option>
+                        <option value="front-two">Front Two Windows</option>
+                        <option value="full-cabin" selected>Full Cabin Ceramic Tint</option>
+                    </select>
+                </div>
+
+                <div>
+                    <!-- class="company-name" is to style company name or to highlight phrases -->
+                    <label for="wheel-package"><strong class="company-name">Custom Wheel & Coating Option</strong>:</label>
+                    <select id="wheel-package" name="wheelPackage">
+                        <option value="none" selected>None</option>
+                        <option value="mount-balance">Precision Mount &amp; Balance</option>
+                        <option value="wheel-coating">Custom Wheel Install + Ceramic Coating</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="travel-zone"><strong class="company-name">Charlotte Location Zone</strong>:</label>
+                    <select id="travel-zone" name="travelZone">
+                        <option value="local" selected>Within 25 Miles of Charlotte (Free Travel)</option>
+                        <option value="extended">Extended Charlotte Metro (25–40 Miles)</option>
+                    </select>
+                </div>
+            </form>
+
+            <div id="estimator-output" role="region" aria-live="polite">
+                <p><strong class="company-name">Estimated Total</strong>: <span id="estimated-total">$0</span></p>
+                <p><strong class="company-name">Estimated Mobile Time</strong>: <span id="estimated-time">0 hours</span></p>
+                <p><strong class="company-name">Ceramic Spec Summary</strong>: <span id="spec-summary">Up to 99% UV rejection &amp; 96% IR heat rejection</span></p>
+                <button type="button" id="copy-quote-btn" style="background-color: brown; color: white; cursor: pointer; font-size: .9rem; border-radius: 5px;">Quote Summary</button>
+                <p id="copy-status" role="status" aria-live="polite"></p>
+            </div>
+        </section>
     
     </main>
 
     <!-- Footer -->
     <div data-include="components/footer.html"></div>
-    <p class="course-home"><a href="https://webpages.charlotte.edu/mlawso23/itis3135/">Back to ITIS3135 Course Page</a></p>
     <script src="scripts/include.min.js"></script>
+    <script src="scripts/package-estimator.js" defer></script>
 </body>
 </html>

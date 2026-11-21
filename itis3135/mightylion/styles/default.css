@@ -83,6 +83,7 @@ footer a:hover, a:focus {
     text-align: center;
 }
 
+
 @media (max-width: 800px) {
     img {
         width: 100%;
@@ -90,3 +91,16 @@ footer a:hover, a:focus {
     }
 
 }
+
+/* Styling for estimator form */
+#estimator-form > div {
+    margin-bottom: 10px;
+}
+
+#estimator-form select {
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 500;
+    width: auto;
+}
+
