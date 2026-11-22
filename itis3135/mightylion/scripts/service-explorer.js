@@ -110,5 +110,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    renderServiceCards("all");
+    renderServiceCards("tint");
 });
